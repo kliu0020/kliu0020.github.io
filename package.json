@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "three": "^0.164.1"
-  }
+  },
+  "devDependencies": {
+    "vite": "^5.2.10"
+  },
+  "name": "kliu0020.github.io",
+  "description": "[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

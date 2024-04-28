@@ -4,7 +4,7 @@
 
 ## Description
 
-Provide a brief description of your project here. Explain what it does, its main features, and why someone might want to use it.
+Kevin Liu's personal website hosted on github pages.
 
 ## Table of Contents
 
