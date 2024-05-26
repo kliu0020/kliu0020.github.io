@@ -53,7 +53,7 @@ function animate() {
 }
 
 function render() {
-  uniforms.u_time.value += 0.05 * (1 + uniforms.u_mouse.value.x / 200);
+  uniforms.u_time.value += 0.01 * (1 + uniforms.u_mouse.value.x / 200);
   renderer.render(scene, camera);
 }
 
