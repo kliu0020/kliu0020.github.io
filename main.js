@@ -53,8 +53,7 @@ function animate() {
 }
 
 function render() {
-  const mouseFactor = 0.01; // Adjust this value to control the impact of mouse movement
-  uniforms.u_time.value += 0.1 * (1 + mouseFactor * uniforms.u_mouse.value.x / 200);
+  uniforms.u_time.value += 0.05 * (1 + uniforms.u_mouse.value.x / 200);
   renderer.render(scene, camera);
 }
 
