@@ -181,4 +181,16 @@ function animate() {
     newCubes.rotation.x += 0.008;
     newCubes.rotation.y += 0.005;
     newCubes.rotation.z += 0.003;
-    newCubes.position.x = Math.sin
+    newCubes.position.x = Math.sin(time * newCubes.positionZ) * newCubes.positionY;
+    newCubes.position.y = Math.cos(time * newCubes.positionX) * newCubes.positionZ;
+    newCubes.position.z = Math.sin(time * newCubes.positionY) * newCubes.positionX;
+  }
+  particularGroup.rotation.y += 0.005;
+  modularGroup.rotation.y -= ((mouse.x * 4) + modularGroup.rotation.y) * uSpeed;
+  modularGroup.rotation.x -= ((-mouse.y * 4) + modularGroup.rotation.x) * uSpeed;
+  camera.lookAt(scene.position);
+  renderer.render(scene, camera);
+}
+
+init();
+animate();
