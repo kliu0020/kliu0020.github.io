@@ -1,69 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Liu</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-    <script src="main.js" defer></script>
-    <style>
-        pre {
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            padding: 15px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Kevin Liu</title>
+  
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  
+  <!-- Your Custom Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Three.js (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <!-- (Optional) If you use TweenMax or GSAP anywhere, be sure to include it -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> -->
+  
+  <!-- Defer load of your main.js so it waits for the HTML to parse -->
+  <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid fixed-top header disable-selection">
-        <div class="row">
-            <div class="col col-md-6">
-                <div class="row">
-                    <div class="col">
-                        <h1>
-                            <strong>Kevin Liu</strong>
-                        </h1>
-                        <h2>
-                            Developer
-                        </h2>
-                        <button class="btn btn-primary m-2" onclick="fetchData('sports')">Fetch Sports Data</button>
-                        <button class="btn btn-primary m-2" onclick="fetchData('racing')">Fetch Racing Data</button>
-                        <button class="btn btn-primary m-2" onclick="fetchData('jumpouts')">Fetch JumpOuts Data</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="data-output" class="container mt-5">
-        <h3>API Data Output</h3>
-        <pre id="json-output">Click a button to fetch data...</pre>
-    </div>
-    <script>
-        function fetchData(type) {
-            let url = '';
-            if (type === 'sports') {
-                url = 'http://127.0.0.1:5000/fetch_sports';
-            } else if (type === 'racing') {
-                url = 'http://127.0.0.1:5000/fetch_racing';
-            } else if (type === 'jumpouts') {
-                url = 'http://127.0.0.1:5000/fetch_jumpouts';
-            }
+  <!-- Container for the 3D scene is just body; main.js appends the renderer automatically -->
 
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    const formattedData = JSON.stringify(data, null, 4);
-                    document.getElementById('json-output').textContent = formattedData;
-                })
-                .catch(error => {
-                    console.error('Error fetching data:', error);
-                    document.getElementById('json-output').textContent = "Error fetching data. Please try again.";
-                });
-        }
-    </script>
+  <!-- Fixed header with your content -->
+  <div class="container-fluid header disable-selection">
+    <div class="row justify-content-center">
+      <div class="col col-md-6">
+        <div class="row">
+          <div class="col text-center">
+            <h1><strong>Kevin Liu</strong></h1>
+            <h2>Developer</h2>
+
+            <!-- Your Fetch Data Buttons -->
+            <button class="btn btn-primary m-2" onclick="fetchData('sports')">Fetch Sports Data</button>
+            <button class="btn btn-primary m-2" onclick="fetchData('racing')">Fetch Racing Data</button>
+            <button class="btn btn-primary m-2" onclick="fetchData('jumpouts')">Fetch JumpOuts Data</button>
+
+            <!-- Where data will be displayed -->
+            <div id="data-output" class="container mt-5">
+              <h3>API Data Output</h3>
+              <!-- Container where we’ll render the table -->
+              <div id="table-container"></div>
+              <!-- Fallback display if something goes wrong or for debugging -->
+              <pre id="json-output">Click a button to fetch data...</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- That’s it. The rest (scene + fetch logic) lives in main.js -->
 </body>
 </html>

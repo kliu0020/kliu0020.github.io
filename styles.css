@@ -49,3 +49,50 @@ h1::after {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Additional styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Optional: Give your table a little style */
+table {
+  margin-top: 1rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+  padding: 0.75rem;
+}
+
+tbody td {
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.75rem;
+}
+
+/* In styles.css or a custom override file */
+
+.container-fluid.header.disable-selection {
+  background-color: transparent !important; 
+  /* Or remove any background if previously set. */
+}
+
+.row, .col {
+  background-color: transparent !important;
+}
