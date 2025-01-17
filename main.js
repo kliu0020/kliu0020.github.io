@@ -1,9 +1,3 @@
-// main.js
-
-//
-// === THREE JS SCENE SETUP ===
-//
-
 // 1. Renderer setup
 var renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -62,21 +56,20 @@ function mathRandom(num = 1) {
   return -Math.random() * num + Math.random() * num;
 }
 
-var noCubes = 100;
+var noCubes = 75;
 // Init function: create n cubes
 const pastelPalette = [
-  0xEFEEEE,
-  0xE9CCB1,
-  0xD3C4BE,
-  0xE4DAC2,
-  0xF4EEE1,
-  0xC4BDAC,
-  0xEBCFC4,
-  0xE8E6D9,
-  0x999999,
-  0xF3ECE7
+  0xEFEEEE, // Light Gray
+  0xE9CCB1, // Light Brown
+  0xD3C4BE, // Pale Pink
+  0xE4DAC2, // Light Beige
+  0xF4EEE1, // Off White
+  0xC4BDAC, // Taupe
+  0xEBCFC4, // Peach
+  0xE8E6D9, // Light Taupe
+  0x999999, // Gray
+  0xF3ECE7  // Very Light Pink
 ];
-
 
 function init() {
   for (var i = 0; i < noCubes; i++) {
@@ -141,8 +134,8 @@ scene.add(sceneGroup);
 scene.add(light);
 scene.add(lightBack);
 
-var rectSize = 10;
-var intensity = 0.1;
+var rectSize = mathRandom(3);
+var intensity = 0.001; // light intensity change 
 var rectLight = new THREE.RectAreaLight(0x0fffff, intensity, rectSize, rectSize);
 rectLight.position.set(0, 0, 1);
 rectLight.lookAt(0, 0, 0);
@@ -204,9 +197,9 @@ window.addEventListener('mousemove', onMouseMove, false);
 var mouseSpeed = 0.5 // User's mouse speed 
 var uSpeed = 0.2 // Rotation speed
 
-var xAxisRotation = mathRandom(0.1);
-var yAxisRotation = mathRandom(0.1);
-var zAxisRotation = mathRandom(0.1);
+var xAxisRotation = mathRandom(0.05);
+var yAxisRotation = mathRandom(0.05);
+var zAxisRotation = mathRandom(0.05);
 
 function animate() {
   var time = performance.now() * 0.0001;
