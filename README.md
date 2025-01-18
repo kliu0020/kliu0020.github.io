@@ -29,21 +29,17 @@
     npm run dev
     ```
 
-## Running Tests
+## Accessing the Application
 
-To run tests, use the following command:
-```sh
-npm test
-```
+Open your browser and navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) to access the Flask server.  
+Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to access the Vite development server.
 
-## Deployment
+## Fetching Data
 
-To deploy the project, follow these steps:
-1. Build the project:
-    ```sh
-    npm run build
-    ```
-2. Deploy the contents of the `dist` directory to your web server.
+Use the buttons on the webpage to fetch data from the APIs:
+- **Fetch Sports Data**
+- **Fetch Racing Data**
+- **Fetch JumpOuts Data**
 
 ## Contributing
 
