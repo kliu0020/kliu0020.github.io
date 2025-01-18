@@ -7,24 +7,39 @@
 ## Setup Instructions
 
 1. **Clone the repository**:
-   ```sh
-   git clone https://github.com/kliu0020/kliu0020.github.io.git
-   cd kliu0020.github.io
+    ```sh
+    git clone https://github.com/kliu0020/kliu0020.github.io.git
+    cd kliu0020.github.io
+    ```
 
-1. run `npm install`
-2. run `python -m venv venv`
-3. run `venv\Scripts\activate`
-4. Under `scripts` in your package.json file add this line `"dev": "vite",`
-5. To run the IW Racing information set up your virtual environment
-6. **Install Python dependencies**:
+2. **Install Node.js dependencies**:
+    ```sh
+    npm install
+    ```
+
+3. **Set up Python virtual environment**:
+    ```sh
+    python -m venv venv
+    venv\Scripts\activate
+    ```
+
+4. **Add development script**:
+    Under `scripts` in your `package.json` file, add this line:
+    ```json
+    "dev": "vite"
+    ```
+
+5. **Install Python dependencies**:
     ```sh
     pip install -r requirements.txt
     ```
-7. **Start the server**:
+
+6. **Start the server**:
     ```sh
     python server.py
     ```
-8. **Start the development server**:
+
+7. **Start the development server**:
     ```sh
     npm run dev
     ```
