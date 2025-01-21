@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Kevin Liu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kevin Liu's developer portfolio featuring 3D rendering and API data visualization.">
+  <title>Kevin Liu - Developer Portfolio</title>
   
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Bootstrap CSS for styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   
-  <!-- Your Custom Styles -->
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
   
-  <!-- Three.js (CDN) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
-  <!-- (Optional) If you use TweenMax or GSAP anywhere, be sure to include it -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script> -->
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js" defer></script>
   
-  <!-- Defer load of your main.js so it waits for the HTML to parse -->
+  <!-- Modular Scripts -->
+  <script src="data-fetch.js" defer type="module"></script>
   <script src="main.js" defer></script>
 </head>
 <body>
-  <!-- Container for the 3D scene is just body; main.js appends the renderer automatically -->
-
-  <!-- Fixed header with your content -->
+  <!-- Fixed header -->
   <div class="container-fluid header disable-selection">
     <div class="row justify-content-center">
       <div class="col col-md-6">
@@ -31,17 +29,15 @@
             <h1><strong>Kevin Liu</strong></h1>
             <h2>Developer</h2>
 
-            <!-- Your Fetch Data Buttons -->
+            <!-- Buttons for API data fetching -->
             <button class="btn btn-primary m-2" onclick="fetchData('sports')">Fetch Sports Data</button>
             <button class="btn btn-primary m-2" onclick="fetchData('racing')">Fetch Racing Data</button>
             <button class="btn btn-primary m-2" onclick="fetchData('jumpouts')">Fetch JumpOuts Data</button>
 
-            <!-- Where data will be displayed -->
+            <!-- Data Output Section -->
             <div id="data-output" class="container mt-5">
               <h3>API Data Output</h3>
-              <!-- Container where we’ll render the table -->
               <div id="table-container"></div>
-              <!-- Fallback display if something goes wrong or for debugging -->
               <pre id="json-output">Click a button to fetch data...</pre>
             </div>
           </div>
@@ -49,7 +45,5 @@
       </div>
     </div>
   </div>
-
-  <!-- That’s it. The rest (scene + fetch logic) lives in main.js -->
 </body>
 </html>
