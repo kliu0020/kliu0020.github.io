@@ -246,11 +246,11 @@ animate();
 window.fetchData = function (type) {
   let url = '';
   if (type === 'sports') {
-    url = 'http://127.0.0.1:5000/fetch_sports';
+    url = 'https://whalebettor.com/api/v2/CK%20Sports/Tips/API';
   } else if (type === 'racing') {
-    url = 'http://127.0.0.1:5000/fetch_racing';
+    url = 'https://whalebettor.com/api/v2/CK%20Racing/CK%20Tips/API';
   } else if (type === 'jumpouts') {
-    url = 'http://127.0.0.1:5000/fetch_jumpouts';
+    url = 'https://whalebettor.com/api/v2/The%20Jump%20Outs/Tips/';
   }
 
   // Clear old table & indicate loading
