@@ -1,5 +1,5 @@
 # 📅 Today's Bets - Thu 23 Jan 2025
-**Current AEDT Time:** 01:27 PM  
+**Current AEDT Time:** 01:43 PM  
 
 ## 🏆 NBA - Houston Rockets v Cleveland Cavaliers 🏀
 - **Time:** 12:00 PM AEDT  

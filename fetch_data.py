@@ -22,7 +22,7 @@ def fetch_data(api_url, output_file):
         
         md_content = [
             f"# 📅 Today's Bets - {current_aedt.strftime('%a %d %b %Y')}",
-            f"**Current AEDT Time:** {current_aedt.strftime('%I:%M %p')}  \n"
+            f"**Last Generated:** {current_aedt.strftime('%I:%M %p')}  \n"
         ]
 
         for game in data:
