@@ -1,71 +1,34 @@
-# 📅 Today's Bets - Thu 23 Jan 2025
-**Current AEDT Time:** 01:43 PM  
+# 📅 Today's Bets - Wed 29 Jan 2025
+**Last Generated:** 09:27 AM  
 
-## 🏆 NBA - Houston Rockets v Cleveland Cavaliers 🏀
-- **Time:** 12:00 PM AEDT  
+## 🏆 NBA - Portland Trail Blazers v Milwaukee Bucks 🏀
+- **Time:** 2:00 PM AEDT  
 - **Type:** Same Game Multi
 
 ### 💰 Bet Details
-1. **Cleveland Cavaliers**  
-   - Bookmaker: Ladbrokes  
-   - Odds: 0  
-   - Stake: $0  
-   - [Bookmaker Site](https://www.ladbrokes.com.au/)
-2. **Jarrett Allen (Cleveland Cavaliers) To Score 10+ Points**  
-   - Bookmaker: Ladbrokes  
-   - Odds: 0  
-   - Stake: $0  
-   - [Bookmaker Site](https://www.ladbrokes.com.au/)
-3. **Dillon Brooks (Houston Rockets) To Make 1+ Three Point FG**  
-   - Bookmaker: Ladbrokes  
-   - Odds: 0  
-   - Stake: $0  
-   - [Bookmaker Site](https://www.ladbrokes.com.au/)
-4. **FINAL:**  
-   - Bookmaker: Ladbrokes  
-   - Odds: 2.5  
-   - Stake: $50  
-   - [Bookmaker Site](https://www.ladbrokes.com.au/)
-
-### 🎉 Active Promotions
-- Place a 3+ SGM and get bonus up to $50 if one leg fails  
-  [View Promotion](https://www.ladbrokes.com.au/promotions)
-
-### 📈 Potential Outcomes
-- **Win::** `▲ Profit $75`
-- **1 Leg Fails::** `▼ Loss $10`
-- **2 Legs Fail::** `▼ Loss $50`
-
----
-
-## 🏆 NBA - Suns v Nets🏀
-- **Time:** 11:30 AM AEDT  
-- **Type:** Same Game Multi
-
-### 💰 Bet Details
-1. **Suns Win**  
+1. **Bucks Win**  
    - Bookmaker: MintBet  
    - Odds: 0  
    - Stake: $0  
    - [Bookmaker Site](https://mintbet.com.au/)
-2. **Kevin Durant 25+ Points**  
+2. **Brook Lopez 1+ Three Pointer**  
    - Bookmaker: MintBet  
    - Odds: 0  
    - Stake: $0  
    - [Bookmaker Site](https://mintbet.com.au/)
-3. **Kevin Durant 1+ Block**  
+3. **Damian Lillard 3+ Three Pointer**  
    - Bookmaker: MintBet  
    - Odds: 0  
    - Stake: $0  
    - [Bookmaker Site](https://mintbet.com.au/)
-4. **Over 206.5 Total Points**  
+4. **Toumani Camara 4+ Rebounds**  
    - Bookmaker: MintBet  
    - Odds: 0  
    - Stake: $0  
    - [Bookmaker Site](https://mintbet.com.au/)
 5. **FINAL:**  
    - Bookmaker: MintBet  
-   - Odds: 2.9  
+   - Odds: 2.7  
    - Stake: $50  
    - [Bookmaker Site](https://mintbet.com.au/)
 
@@ -74,33 +37,33 @@
   [View Promotion](https://mintbet.com.au/promotions)
 
 ### 📈 Potential Outcomes
-- **Win::** `▲ Profit $95`
+- **Win::** `▲ Profit $85`
 - **1 Leg Fails::** `▼ Loss $10`
 - **2 Legs Fail::** `▼ Loss $50`
 
 ---
 
-## 🏆 NBA - Hawks v Pistons 🏀
+## 🏆 NBA - Los Angeles Lakers @ Philadelphia 76ers 🏀
 - **Time:** 11:30 AM AEDT  
 - **Type:** Same Game Multi
 
 ### 💰 Bet Details
-1. **Over 229.5 Total Points**  
+1. **Los Angeles Lakers**  
    - Bookmaker: Betr  
    - Odds: 0  
    - Stake: $0  
    - [Bookmaker Site](https://betr.com.au/)
-2. **Dyson Daniel's 2+ Steals**  
+2. **Player three pointers - LeBron James under 2.5 (Player Three Point Prop)**  
    - Bookmaker: Betr  
    - Odds: 0  
    - Stake: $0  
    - [Bookmaker Site](https://betr.com.au/)
-3. **Jaylen Duran 10+ Points**  
+3. **Player points - T. Maxey 25+**  
    - Bookmaker: Betr  
    - Odds: 0  
    - Stake: $0  
    - [Bookmaker Site](https://betr.com.au/)
-4. **FINAL: Apply Bet Back**  
+4. **FINAL: Apply Bet-Back**  
    - Bookmaker: Betr  
    - Odds: 3.1  
    - Stake: $50  
