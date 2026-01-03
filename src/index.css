@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Dark luxury palette */
+    --background: 0 0% 4%;
+    --foreground: 40 10% 90%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 40 10% 90%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 40 10% 90%;
+
+    /* Muted antique gold */
+    --primary: 43 35% 55%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 40 10% 85%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 5% 55%;
+
+    --accent: 43 25% 45%;
+    --accent-foreground: 40 10% 90%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 10% 90%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 43 35% 55%;
+
+    --radius: 0px;
+
+    /* Custom luxury tokens */
+    --gold: 43 35% 55%;
+    --gold-muted: 43 20% 40%;
+    --gold-light: 43 40% 70%;
+    --charcoal: 0 0% 8%;
+    --charcoal-deep: 0 0% 4%;
+    --cream: 40 20% 92%;
+  }
+
+  .dark {
+    --background: 0 0% 4%;
+    --foreground: 40 10% 90%;
+    --card: 0 0% 6%;
+    --card-foreground: 40 10% 90%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 40 10% 90%;
+    --primary: 43 35% 55%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 40 10% 85%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 5% 55%;
+    --accent: 43 25% 45%;
+    --accent-foreground: 40 10% 90%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 40 10% 90%;
+    --border: 0 0% 15%;
+    --input: 0 0% 12%;
+    --ring: 43 35% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .text-gold-muted {
+    color: hsl(var(--gold-muted));
+  }
+
+  .text-gold-light {
+    color: hsl(var(--gold-light));
+  }
+
+  .bg-charcoal {
+    background-color: hsl(var(--charcoal));
+  }
+
+  .bg-charcoal-deep {
+    background-color: hsl(var(--charcoal-deep));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+
+  .border-gold-muted {
+    border-color: hsl(var(--gold-muted));
+  }
+
+  /* Subtle texture overlay */
+  .texture-overlay {
+    position: relative;
+  }
+
+  .texture-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  /* Luxury fade animations */
+  .fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+
+  .fade-in-delay-1 {
+    animation-delay: 0.2s;
+    opacity: 0;
+  }
+
+  .fade-in-delay-2 {
+    animation-delay: 0.4s;
+    opacity: 0;
+  }
+
+  .fade-in-delay-3 {
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+
+  .fade-in-delay-4 {
+    animation-delay: 0.8s;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for luxury feel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--charcoal-deep));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--gold-muted));
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--gold));
+}

@@ -1,69 +1,73 @@
-# Project Setup
+# Welcome to your Lovable project
 
-## Prerequisites
-- Node.js and npm
-- Python 3.x
+## Project info
 
-## Setup Instructions
+**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/kliu0020/kliu0020.github.io.git
-    cd kliu0020.github.io
-    ```
+## How can I edit this code?
 
-2. **Install Node.js dependencies**:
-    ```sh
-    npm install
-    ```
+There are several ways of editing your application.
 
-3. **Set up Python virtual environment**:
-    ```sh
-    python -m venv venv
-    venv\Scripts\activate
-    ```
+**Use Lovable**
 
-4. **Add development script**:
-    Under `scripts` in your `package.json` file, add this line:
-    ```json
-    "dev": "vite"
-    ```
+Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
 
-5. **Install Python dependencies**:
-    ```sh
-    pip install -r requirements.txt
-    ```
+Changes made via Lovable will be committed automatically to this repo.
 
-6. **Start the server**:
-    ```sh
-    python server.py
-    ```
+**Use your preferred IDE**
 
-7. **Start the development server**:
-    ```sh
-    npm run dev
-    ```
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-## Accessing the Application
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Open your browser and navigate to [http://127.0.0.1:5000](http://127.0.0.1:5000) to access the Flask server.  
-Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to access the Vite development server.
+Follow these steps:
 
-## Fetching Data
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Use the buttons on the webpage to fetch data from the APIs:
-- **Fetch Sports Data**
-- **Fetch Racing Data**
-- **Fetch JumpOuts Data**
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-## Contributing
+# Step 3: Install the necessary dependencies.
+npm i
 
-If you would like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-## License
+**Edit a file directly in GitHub**
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-## Contact
+**Use GitHub Codespaces**
 
-If you have any questions or feedback, please contact Kevin Liu at [kliu0020@example.com](mailto:kliu0020@example.com).
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)

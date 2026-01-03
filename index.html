@@ -1,49 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kevin Liu's developer portfolio featuring 3D rendering and API data visualization.">
-  <title>Kevin Liu - Developer Portfolio</title>
-  
-  <!-- Bootstrap CSS for styling -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Three.js Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js" defer></script>
-  
-  <!-- Modular Scripts -->
-  <script src="data-fetch.js" defer type="module"></script>
-  <script src="main.js" defer></script>
-</head>
-<body>
-  <!-- Fixed header -->
-  <div class="container-fluid header disable-selection">
-    <div class="row justify-content-center">
-      <div class="col col-md-6">
-        <div class="row">
-          <div class="col text-center">
-            <h1><strong>Kevin Liu</strong></h1>
-            <h2>Developer</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loyal Liquor | Curated Premium Spirits</title>
+    <meta name="description" content="Loyal Liquor offers an exceptional curation of premium spirits. Fine whisky, cognac, champagne, and rare spirits for the discerning connoisseur." />
+    <meta name="author" content="Loyal Liquor" />
+    <meta name="keywords" content="premium spirits, luxury liquor, fine whisky, cognac, champagne, rare spirits, curated collection" />
+    <link rel="canonical" href="https://loyalliquor.com" />
 
-            <!-- Buttons for API data fetching -->
-            <button class="btn btn-primary m-2" onclick="fetchData('sports')">Fetch Sports Data</button>
-            <button class="btn btn-primary m-2" onclick="fetchData('racing')">Fetch Racing Data</button>
-            <button class="btn btn-primary m-2" onclick="fetchData('jumpouts')">Fetch JumpOuts Data</button>
+    <meta property="og:title" content="Loyal Liquor | Curated Premium Spirits" />
+    <meta property="og:description" content="Exceptional curation of premium spirits. Fine whisky, cognac, champagne, and rare spirits for the discerning connoisseur." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:site_name" content="Loyal Liquor" />
 
-            <!-- Data Output Section -->
-            <div id="data-output" class="container mt-5">
-              <h3>API Data Output</h3>
-              <div id="table-container"></div>
-              <pre id="json-output">Click a button to fetch data...</pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@LoyalLiquor" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:title" content="Loyal Liquor | Curated Premium Spirits" />
+    <meta name="twitter:description" content="Exceptional curation of premium spirits for the discerning connoisseur." />
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
